@@ -1,0 +1,5 @@
+.nav_container {
+  display: flex;
+  height: 72px;
+  align-items: center;
+}
