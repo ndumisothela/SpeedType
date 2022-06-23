@@ -1,15 +1,17 @@
 import React from "react";
 import "./App.css";
 import Nav from "./Components/Nav";
+import Landing from "./Components/Landing";
 
 class App extends React.Component {
   render() {
     return (
       <div className="app">
         {/*Nav section */}
-        <h1>this is the navbar</h1>
+        <Nav />
 
         {/*landing page section */}
+        <Landing />
 
         {/*challenge  section */}
 
