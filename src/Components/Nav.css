@@ -32,3 +32,11 @@
   color: #e7e6e7;
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  .flash_title_text {
+    font-size: 30px;
+  }
+  .nav_portfolio_link {
+    font-size: medium;
+  }
+}
