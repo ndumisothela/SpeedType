@@ -1,20 +1,25 @@
 import "./Landing.css";
 import React from "react";
 import hero from "./../Components/Assets/hero.png";
+import Typewriter from "typewriter-effect";
 
 const Landing = () => {
   return (
-    <div className="landing_container  ">
-      <div className="landing_left">
+    <div className="landing_container">
+      <div data-aos="fade-right" className="landing_left">
         <h1 className="landing_header">Can you type...</h1>
         <div className="typewriter_container">
-          <h1>Fast?</h1>
-          <h1>Correct?</h1>
-          <h1>Quick?</h1>
+          <Typewriter
+            options={{
+              strings: ["Fast ?", "Correct ?", "Quick ?"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </div>
       </div>
       <div className="landing_right">
-        <img className="flash_photo" src={hero} alt="hero_logo" />
+        <img className="flash_image" src={hero} alt="hero_logo" />
       </div>
     </div>
   );
