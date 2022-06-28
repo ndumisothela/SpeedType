@@ -1,15 +1,24 @@
 import React from "react";
 import "./TypingChallenge.css";
 
-const TypingChallenge = ({ selectedParagraph }) => {
+const TypingChallenge = ({
+  selectedParagraph,
+  timeRemaining,
+  timerStarted,
+}) => {
   return (
     <div className="typing_challenge">
-      <p className="timer">00:01</p>
-      <p className="timer_info">Start typing to start the test</p>
-
+      <p className="timer">
+        00:{timeRemaining > 10 ? timeRemaining : `0${timeRemaining}`}
+      </p>
+      {/* when timeRemaining is less than 10, it should still show double digits
+      seconds*/}
+      <p className="timer_info">
+        {!timerStarted ? "Start typing to start the test" : "GO !"}
+      </p>
       <div className="textarea_container">
         <div className="textarea_left">
-          <div className="text_paragraph">paraghaph</div>
+          <div className="text_paragraph">{selectedParagraph}</div>
         </div>
         <div className="textarea_right">
           <textarea

@@ -26,21 +26,32 @@
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  width: 80%;
 }
+
 .textarea_left {
+  display: flex;
+  width: 50%;
+  flex-grow: 1;
+  background-color: lightgrey;
+}
+.textarea_right {
   display: flex;
   width: 50%;
   flex-grow: 1;
 }
 .text_paragraph {
   font-size: 12px;
-  background-color: lightgray;
-  padding: 12px;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.915);
+  overflow: scroll;
 }
-.textarea_right {
-  display: flex;
-  width: 50%;
-  flex-grow: 1;
+.text_paragraph::-webkit-scrollbar {
+  display: none;
+}
+.text_paragraph:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12), 0 19px 29px rgba(0, 0, 0, 0.915);
 }
 .textarea {
   align-items: left;
