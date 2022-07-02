@@ -1,0 +1,15 @@
+.test_letter {
+  font-size: 15px;
+  font-family: "Poppins";
+  line-height: 19px;
+  letter-spacing: none;
+}
+.test_letter_correct {
+  color: green;
+}
+.test_letter_incorrect {
+  color: red;
+}
+.test_letter_not_attempted {
+  color: navy;
+}
