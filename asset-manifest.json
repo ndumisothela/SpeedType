@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/http.//ndumisothela.github.io/speedType/static/css/main.96c45790.css",
-    "main.js": "/http.//ndumisothela.github.io/speedType/static/js/main.3d1e1e7c.js",
-    "static/media/sloth.png": "/http.//ndumisothela.github.io/speedType/static/media/sloth.f26e68a01ffb035d6614.png",
-    "static/media/hero.png": "/http.//ndumisothela.github.io/speedType/static/media/hero.ddcbdf3682720076520b.png",
-    "static/media/lightning.png": "/http.//ndumisothela.github.io/speedType/static/media/lightning.cb24142631be229db824.png",
-    "index.html": "/http.//ndumisothela.github.io/speedType/index.html",
-    "main.96c45790.css.map": "/http.//ndumisothela.github.io/speedType/static/css/main.96c45790.css.map",
-    "main.3d1e1e7c.js.map": "/http.//ndumisothela.github.io/speedType/static/js/main.3d1e1e7c.js.map"
+    "main.css": "/speedType/static/css/main.96c45790.css",
+    "main.js": "/speedType/static/js/main.9c229743.js",
+    "static/media/sloth.png": "/speedType/static/media/sloth.f26e68a01ffb035d6614.png",
+    "static/media/hero.png": "/speedType/static/media/hero.ddcbdf3682720076520b.png",
+    "static/media/lightning.png": "/speedType/static/media/lightning.cb24142631be229db824.png",
+    "index.html": "/speedType/index.html",
+    "main.96c45790.css.map": "/speedType/static/css/main.96c45790.css.map",
+    "main.9c229743.js.map": "/speedType/static/js/main.9c229743.js.map"
   },
   "entrypoints": [
     "static/css/main.96c45790.css",
-    "static/js/main.3d1e1e7c.js"
+    "static/js/main.9c229743.js"
   ]
 }
