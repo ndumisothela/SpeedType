@@ -4,6 +4,7 @@ import Nav from "./Components/Nav";
 import Landing from "./Components/Landing";
 import Footer from "./Components/Footer";
 import ChallengeSection from "./Components/ChallengeSection";
+import { SAMPLE_PARAGRAPHS } from "./SampleParagraph";
 
 const totalTime = 120;
 const serviceUrl = "http://metaphorpsum.com/paragraphs/1/9";
@@ -19,6 +20,18 @@ const defaultState = {
 class App extends React.Component {
   /*class states */
   state = defaultState;
+  fetchNewParagraphFallback = () => {
+    const data =
+      SAMPLE_PARAGRAPHS[Math.floor(Math.random() * SAMPLE_PARAGRAPHS.length)];
+    const selectedParagraphArray = data.split(""); //spliting the paragraph into each letter
+    const testInfo = selectedParagraphArray.map((selectedLetter) => {
+      return {
+        testLetter: selectedLetter,
+        status: "notAttempted", //status for each letter, correct,incorrect or notAttempted
+      };
+    });
+    this.setState({ ...defaultState, testInfo, selectedParagraph: data });
+  };
   fetchNewParagraph = () => {
     fetch(serviceUrl)
       .then((response) => response.text())
@@ -34,7 +47,7 @@ class App extends React.Component {
       });
   };
   componentDidMount() {
-    this.fetchNewParagraph();
+    this.fetchNewParagraphFallback();
   }
 
   startTimer = () => {
@@ -55,7 +68,7 @@ class App extends React.Component {
     }, 1000);
   };
   startAgain = () => {
-    this.fetchNewParagraph();
+    this.fetchNewParagraphFallback();
   };
 
   handleUserInput = (inputValue) => {
