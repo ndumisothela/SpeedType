@@ -2,7 +2,7 @@ import React from "react";
 import "./TryAgain.css";
 import sloth from "./../Components/Assets/sloth.png";
 
-const TryAgain = ({ words, characters, wpm }) => {
+const TryAgain = ({ words, characters, wpm, startAgain }) => {
   return (
     <>
       <div className="try_again_container">
@@ -22,7 +22,12 @@ const TryAgain = ({ words, characters, wpm }) => {
           </p>
         </div>
         <div>
-          <button className="end-buttons start-again-btn">Re-try</button>
+          <button
+            onClick={() => startAgain()}
+            className="end-buttons start-again-btn"
+          >
+            Re-try
+          </button>
           <button
             onClick={() => {
               window.open(
