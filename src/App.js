@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import ChallengeSection from "./Components/ChallengeSection";
 import { SAMPLE_PARAGRAPHS } from "./SampleParagraph";
 
-const totalTime = 100;
+const totalTime = 60;
 const serviceUrl = "http://metaphorpsum.com/paragraphs/1/9";
 const defaultState = {
   selectedParagraph: " ",
